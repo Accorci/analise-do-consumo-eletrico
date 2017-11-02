@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: white;
+    background-color: #dddddd; /* cor do plano de fundo */
+    color: rgba(0,0,0,1);
+}
+
+header#cabecalho {
+  border-bottom: 3px #dddddd solid;
+  height: 71px;
+}
+
+
+div#interface {
+  width: 1270px;
+  height: 618px;
+  display:block; 
+  overflow: auto;
+  width: 1250px;
+  background-color: #ffffff;
+  margin: 20px auto 0px auto;
+  box-shadow: 0px 0px 15px black;
+  padding: 10px 10px 10px 10px;
+}
+/*  */
+section#corpo{
+  display:block; 
+  margin-left: 5%; 
+  margin-right: 0.5%;
+  margin-top: 2%; 
+  width: 43%;
+  float:left; 
+}
+aside#lateral {
+  margin-top: 2%; 
+  display:block; 
+  margin-right: 5%;  
+  margin-left: 0.5%;
+  width: 43%; 
+  float:right;
+  
+}
+
+
+table#onoff td,th{
+   
+    text-align: center;
+}
+
+table#onoff th{
+    
+    text-align: center;
+}
+
+
+table#onoff {
+  position: center;
+  
+}
+
+form {
+  position: center;
+}
+
+/* Formatação do Menu */
+
+
+
+.nav-list ul li {
+position:absolute; 
+top:25px; 
+left:0;
+background-color:#fff; 
+display:none;
+float:left;
+} 
+
+
+.nav-bar {
+    width: 100%;
+}
+
+.nav-container {
+    overflow: hidden;
+    margin: 1.5% auto;
+}
+
+.nav-menu {
+  display: none;
+}
+
+nav.nav-bar ul {
+  list-style: none;
+}
+
+.nav-list {
+  margin: 0 auto;
+  width: 110%;
+  padding: 0;
+}
+
+.nav-list li {
+  float: left;
+  width:13%;
+}
+
+.nav-list li a {
+  display: block;
+  color: #dddddd;
+  text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
+  padding: 30px 30px;
+  font-size: 1.3em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition:all 0.2s linear;
+   -moz-transition:all 0.2s linear;
+     -o-transition:all 0.2s linear;
+        transition:all 0.2s linear;
+}
+
+.nav-list li a:hover {
+  -webkit-filter: brightness(1.3);
+  padding-top: 10px ;
+}
+
+/* Adding background color to tiles */
+
+#tile1 {
+  background:#00ced7
+}
+
+#tile2 {
+  background:#00bbc3
+}
+
+#tile3 {
+  background:#00a8af
+}
+
+#tile4 {
+  background:#00959c
+}
+
+#tile5 {
+  background:#00889c
+}
+
+#tile6 {
+  background:#007b9c
+}
+
+#tile7 {
+  background:#006e9c
+}
+
+#tile8 {
+  background:#005c83
+}
+
+/* Making the tiled menu responsive */
+
+@media screen and (min-width: 1080px) and (max-width:1366px) {
+ .nav-bar {
+    margin-top: 1%;
+  }
+ .nav-list li a {
+    padding: 20px 15px;
+    font-size: 1.3em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1079px) {
+ .nav-bar {
+    margin-top: 4.7%;
+  }
+  .nav-list li a {
+    padding: 20px 8px;
+    font-size: 1.3em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .nav-container,.container {
+    margin: 8% auto;
+  }
+  .nav-list li {
+    float: left;
+    width: 50%;
+  }
+  .nav-list li a:hover{
+    padding-right: 40%;
+    padding-top: 30px ;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-container,.container {
+    background:#4f6f8f
+   }
+  
+  .nav-menu{
+  color: #fff;
+  float: left;
+  display: block;
+  padding: 10px 10px;
+  cursor: pointer;
+   }
+  
+   header, footer {
+    display: none;
+   }
+  
+  .nav-list{
+    float: left; 
+    width: 100%;
+    height: 0;
+   }
+  
+  .open {
+    height:auto
+   }
+
+  .nav-list li {
+    width:100%
+   }
+
+  .nav-list li a {
+    text-align: center;
+   }
+
+   .nav-list li a:hover {
+    padding-left: 36%;
+    padding-top: 30px;
+   }
+  
+}
