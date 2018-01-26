@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #1E90FF; /* cor azul do plano de fundo */
+	color: rgba(0,0,0,1);
+}
+
+header#cabecalho {
+	font-size: 30pt;
+	text-align: center;
+	color: white;
+	box-shadow: rgba(0,0,0,1);
+}
+
+/* Formatação do Menu */
+
+nav#menu {
+	display: block;
+}
+
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 200px;
+	left: 525px;
+}
+
+nav#menu li {
+	background-color: #ffffff; /* cinza claro */
+	padding: 10px;
+	margin: 20px;
+	transition: background-color 1s;
+	text-align: center;
+}
+
+nav#menu li:hover {
+	background-color: #606060; /* cinza escuro*/
+}
+
+nav#menu a {
+	color: #000000;
+	text-decoration: none;
+}
+
+nav#menu a:hover {
+	color: #ffffff;
+}
+
